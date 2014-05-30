@@ -5,11 +5,15 @@
   "description": "This extension allows users to highlight text, right click, and have the option of having it rendered on Swift.",
   "version": "1.0",
 
+  "background": {
+    "scripts": ["script.js"]
+  },
+
   "browser_action": {
-    "default_icon": "icon19.png",
-    "default_popup": "popup.html"
+    "default_icon": "icon19.png"
   },
   "permissions": [
-    "contextMenus"
+    "contextMenus",
+    "http://www.swift-reader.com/"
   ]
 }
