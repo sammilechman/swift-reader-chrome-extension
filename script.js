@@ -1,8 +1,4 @@
 function onClickHandler(info, tab) {
-  console.log("info");
-  console.log(info);
-  console.log("tab");
-  console.log(tab);
 
   var selectionText = info.selectionText;
 
@@ -10,7 +6,7 @@ function onClickHandler(info, tab) {
 
     chrome.tabs.executeScript(tab.id, {
       runAt: "document_end",
-      code: 'document.onreadystatechange = function(){ if (document.readyState == "complete") { console.log(document.readyState); var a = document.querySelector("#hidden-listener"); console.log(a.textContent="'+selectionText+'"); }}'
+      code: 'document.onreadystatechange = function(){ if (document.readyState == "complete") { var a = document.querySelector("#hidden-listener"); a.textContent="'+selectionText+'"; }}'
     });
   });
 

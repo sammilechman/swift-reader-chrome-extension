@@ -4,6 +4,7 @@
   "name": "Swift Chrome Extension",
   "short_name": "Swift",
   "description": "This extension allows users to highlight text, right click, and have the option of having it rendered on Swift.",
+  "icons": { "128": "icon128.png" },
   "version": "1.0",
 
   "background": {
